@@ -1,7 +1,7 @@
 // 3. 두 정수 사이의 정수들 중 소수를 화면에 출력하는 함수
 
 #include <stdio.h>
-void primePrint(int x, int y)
+void printPrime(int x, int y)
 {
 	int a, b;
 	int sum = 0;
@@ -37,5 +37,5 @@ int main()
 	printf("\n");
 
 	printf("%d부터 %d까지의 소수는 다음과 같습니다.\n", x, y);
-	primePrint(x, y);
+	printPrime(x, y);
 }

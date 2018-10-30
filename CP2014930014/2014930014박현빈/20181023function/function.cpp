@@ -9,7 +9,7 @@
 int sum(int a, int b)	// => 함수 선언
 {
 	// 함수이름 (sum)
-	// 매개변수의 갯수 : 2
+	// 매개변2수의 갯수 : 2
 	// 각 매개변수의 자료형 (int, int)
 	// 반환값의 자료형(반환형) (int)		==> 함수 호출하기 위해 필요한 정보
 	int c;
@@ -33,7 +33,7 @@ int main()
 	z = sum(x, y);			// 함수 호출
 	printf("z = %d\n", z);
 	// 디버거 사용법 : 좌측에 회색 부분을 클릭하여 F5를 클릭하면 디버거를 실행할 수 있다.
-	// 조사식 - Debug - Windos - Watch - Watch1
+	// 조사식 - Debug - Windows - Watch - Watch1
 	// 조사식에서 &x를 입력하면 x의 주소를 보여준다.
 	goodPrint();
 	return 0;
