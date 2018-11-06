@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{AB34448D-5825-4CAE-A497-09684478A38A}</ProjectGuid>
+    <ProjectGuid>{8D5DDD43-84A4-49FF-8B18-F4056879DBBB}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My20181002변수</RootNamespace>
+    <RootNamespace>My20181106Pointer_Array</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -76,7 +76,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Variable.cpp" />
+    <ClCompile Include="PA.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
