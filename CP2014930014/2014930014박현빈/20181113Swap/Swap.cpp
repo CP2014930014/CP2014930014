@@ -3,12 +3,12 @@
 // 입력 : 배열(배열이름, 배열길이)
 // 출력 : 최소값의 인덱스
 // 부수효과 : 없음
-int findMinIndex(int* arr, int length)
+int findMinIndex(int* arr, int index, int length)
 {
 	int i;
-	int minIndex = 0;
+	int minIndex = index;
 
-	for (i=1; i<length; i++)
+	for (i=index; i<length; i++)
 	{
 		if (arr[minIndex] > arr[i])
 			minIndex = i;
@@ -57,12 +57,11 @@ void printArray(int* arr, int len)	// 앞으로 배열을 함수에 전달할 경우 이 문법을
 // findMin 변수하나 더 늘려서 해보기
 void selectionSort(int* arr, int length)
 {
+	int minIndex;
 	for (int i=0; i<length; i++)
 	{
-		for (int j=i+1; j<length; j++)
-		{
-
-		}
+		minIndex = findMinIndex(arr, i, length);
+		swapElement(arr, i, minIndex);
 	}
 }
 
@@ -80,7 +79,7 @@ int main()
 	// 15 27 30 35 40
 
 	int min = findMin(a, 5);
-	mi = findMinIndex(a, 5);
+	mi = findMinIndex(a, 0, 5);
 
 	printf("배열의 최소값은 %d 이고, 그 인덱스 값은 %d 이다.\n", min, mi);
 
