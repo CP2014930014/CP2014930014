@@ -14,7 +14,7 @@ void swapElement(int* arr, int i, int j)
 // 함수 : insertElement()
 // 입력 : 배열(배열이름, 배열길이)
 // 출력 : 없음
-// 부수효과 : 배열에 요소를 추가함
+// 부수효과 : 배열의 element요소까지 정렬됨
 void insertElement(int* arr, int element)
 {
 	while (element>0)
@@ -30,7 +30,7 @@ void insertElement(int* arr, int element)
 // 함수 : insertionSort()
 // 입력 : 배열, 
 // 출력 : 없음
-// 부수효과 : 배열에 하나의 값을 크기 순대로 배열했을 때의 자리에 추가함.
+// 부수효과 : 배열이 정렬됨.
 void insertionSort(int* arr, int length)
 {
 	for (int i=1; i<length; i++)
